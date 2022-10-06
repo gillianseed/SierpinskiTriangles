@@ -1,4 +1,3 @@
-//header file
 #ifndef TRIANGLE_H
 #define TRIANGLE_H
 
@@ -16,14 +15,10 @@ public:
   void setRadius(double length);
   double getRadius();
   void setFillColor(double a, double b, double c);
-  /**double getLength();
-  double getCenterX();
-  double getCenterY();**/
 private:
   virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
   double length;
   double radius;
-  //sf::CircleShape triangle(double l, double s); //maybe define in constructor
   sf::CircleShape triangle;
   sf::Texture texture;
 };
